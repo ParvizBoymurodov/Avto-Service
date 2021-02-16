@@ -11,6 +11,7 @@ create table if not exists registered (
 --TODO:Протсеси бакайдгири ба барнома
 insert into registered (name, surname, login, password) VALUES ('Ном', 'Насаб', 'Логин', md5('Парол') );
 
+
 --TODO:Протсеси дохилшави ба барнома
 select login, password from registered where login = 'Логин';
 
@@ -62,3 +63,9 @@ select sm.market_name,  sm.title, s.service_name from servicemarket sm inner joi
 
 --TODO:Удалит кардани магоза
 update servicemarket set remove = true where id= 'id';
+
+
+
+
+
+

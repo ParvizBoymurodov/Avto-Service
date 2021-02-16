@@ -1,18 +1,20 @@
 package main
 
 import (
-	"avtoService/cmd/app"
-	"avtoService/models"
-	"avtoService/psql"
 	"context"
 	"encoding/json"
-	"github.com/gorilla/mux"
-	"github.com/jackc/pgx/v4/pgxpool"
 	"io/ioutil"
 	"log"
 	"net"
 	"net/http"
 
+
+	"avtoService/cmd/app"
+	"avtoService/models"
+	"avtoService/psql"
+
+	"github.com/gorilla/mux"
+	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/rs/cors"
 )
 
