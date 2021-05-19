@@ -5,6 +5,6 @@ type Market struct {
 	Name      string `json:"name" validate:"nonzero"`
 	ServiceId int64  `json:"service_id" validate:"nonzero"`
 	Title     string `json:"title" validate:"nonzero"`
-	Service   Svc    `json:"service"`
+	Service   Svc    `json:"service,omitempty"`
 }
 
